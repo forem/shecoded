@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function(){
     };
 
     let url = "/api/articles";
-    let params = "tag=shecoded&per_page=45";
+    let params = "tag=shecoded&per_page=120";
 
     xmlhttp.open("GET", `${url}?${params}`, true);
     xmlhttp.send();
@@ -343,12 +343,15 @@ InstantClick.on('change', function() {
             <img class="she-coded-page__sticker" src="https://res.cloudinary.com/practicaldev/image/fetch/s--k1ouM6t2--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/wldub08qchqrq2u3c8it.png" alt="she coded sticker">
           </div>
           <div class="she-coded-page__sheet-description">
-            <h1 class="she-coded-page__sheet-header">Let’s get ready for International Women’s Day!</h1>
+            <h1 class="she-coded-page__sheet-header">Let’s celebrate International Women’s Day!</h1>
             <p class="she-coded-page__sub-header-description">
-              Each year, <b>“Nevertheless, She Coded”</b> amplifies the journeys of self-identifying women and non-binary people who code.  Our annual #SheCoded celebration has blossomed into a truly beautiful collection of experiences, with each voice adding powerful perspective, wisdom, and advice.
+              Each year, <b>“Nevertheless, She Coded”</b> amplifies the journeys of women who code.  Our annual <a href="/t/shecoded" style="color:#4755EB;">#SheCoded</a> celebration has blossomed into a truly beautiful collection of experiences, with each voice adding powerful perspective, wisdom, and advice. For the fifth year in a row, we’re collecting stories from the women and allies in our community to put a spotlight on the need for gender equality and the accomplishments of women in this field we all love
             </p>
             <p class="she-coded-page__sub-header-description">
-              In preparation for our big celebration on March 6-9, 2020, we’re collecting stories and advice from everyone in the community. We all have a part to play in accelerating equality.
+              We hope you take some time to read through our community collection, and we encourage you to share your own story or advice. <strong>We will be highlighting and celebrating your stories on International Women’s Day on March 8th. Please join us!</strong>
+            </p>
+            <p class="she-coded-page__sub-header-description" style="font-size: 27px">
+              <strong>We all have a part to play in challenging the status quo in this industry.</strong>
             </p>
           </div>
 
@@ -364,8 +367,9 @@ InstantClick.on('change', function() {
                 <div class="she-coded-page__story-tag-header">#SheCoded</div>
                 <div class="she-coded-page__story-tag-description">Prompts include:</div>
                 <ul class="she-coded-page__story-tag-list">
-                  <li>Equality in tech looks like...</li>
-                  <li>I’m an expert at...</li>
+                  <li>Advocating for myself looks like…
+.</li>
+                  <li>My biggest goal is…</li>
                   <li>My advice for allies to support self-identifying women and non-binary folks who code is...</li>
                 </ul>
                 <a href="https://dev.to/new/shecoded"><div class="she-coded-page__story-tag-button">Write #SheCoded Post</div></a>
@@ -375,9 +379,10 @@ InstantClick.on('change', function() {
                 <div class="she-coded-page__story-tag-header">#TheyCoded</div>
                 <div class="she-coded-page__story-tag-description">Prompts include:</div>
                 <ul class="she-coded-page__story-tag-list">
-                  <li>Equality in tech looks like...</li>
-                  <li>I’m an expert at...</li>
-                  <li>My advice for allies to support non-binary and self-identifying women folks who code is...</li>
+                  <li>Advocating for myself looks like…
+.</li>
+                  <li>My biggest goal is…</li>
+                  <li>My advice for allies to support women who code is...</li>
                 </ul>
                 <a href="https://dev.to/new/theycoded"><div class="she-coded-page__story-tag-button">Write #TheyCoded Post</div></a>
               </div>
@@ -386,9 +391,10 @@ InstantClick.on('change', function() {
                 <div class="she-coded-page__story-tag-header">#SheCodedAlly</div>
                 <div class="she-coded-page__story-tag-description">Prompts include:</div>
                 <ul class="she-coded-page__story-tag-list">
-                  <li>Equality in tech looks like...</li>
-                  <li>I will advocate for equality by...</li>
-                  <li>My advice for allies to support self-identifying women and non-binary folks who code is...</li>
+                  <li>I will challenge gender stereotypes and bias by…</li>
+                  <li>I will nominate women for….</li>
+                  <li>I will commit to learning more about…</li>
+          <li>My advice for fellow allies to support women who code is…</li>
                 </ul>
                 <a href="https://dev.to/new/shecodedally"><div class="she-coded-page__story-tag-button">Write #SheCodedAlly Post</div></a>
               </div>
@@ -400,7 +406,7 @@ InstantClick.on('change', function() {
           <div class="she-coded-page__some-stories-container">
             <div class="she-coded-page__sub-header">Community Stories</div>
             <div class="she-coded-page__sub-header-description">
-              Our collection of stories from self-identifying women and non-binary people in the community.
+              Our collection of stories from people in the DEV community.
             </div>
             <!-- examples will go in here -->
             <div id="js-she-coded-page__some-stories-sub-container" class="she-coded-page__some-stories-sub-container">
@@ -419,3 +425,5 @@ InstantClick.on('change', function() {
     </div>
   </div>
 </div>
+
+

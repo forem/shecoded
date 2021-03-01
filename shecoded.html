@@ -76,10 +76,8 @@ InstantClick.on('change', function() {
     .she-coded-page__container {
       background: url(https://res.cloudinary.com/practicaldev/image/fetch/s--Lj0AvkQR--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/2b2spes1e3sby7g1dwq0.jpg);
       margin: 0 auto;
-      background-size: cover;
-      background-attachment: fixed;
-      background-position: center top;
-      height: 100%;
+      background-size: 100%;
+      background-repeat: repeat-y;
     }
 
     .she-coded-page__some-story-container-link {
@@ -113,7 +111,7 @@ InstantClick.on('change', function() {
       box-sizing: border-box;
       box-shadow: 6px 6px 0px #C0BCCD;
       border-radius: 3px;
-      padding: 64px;
+      padding: 3vw;
       position: relative;
     }
 
@@ -127,11 +125,11 @@ InstantClick.on('change', function() {
       position: absolute;
       top: -5.5em;
       right: -4em;
-      height: 450px;
+      height: 300px;
     }
 
     .she-coded-page__sheet-description {
-      width: 65%;
+      width: calc(100% - 250px);
     }
 
     .she-coded-page__divider {
@@ -153,7 +151,7 @@ InstantClick.on('change', function() {
 
     .she-coded-page__sub-header-description {
       font-size: 24px;
-      line-height: 32px;
+      line-height: 34px;
     }
 
     .she-coded-page__story-tag-container {
@@ -181,6 +179,10 @@ InstantClick.on('change', function() {
       line-height: 24px;
     }
 
+    .she-coded-page__story-tag-list {
+      min-height: 145px;
+    }
+
     .she-coded-page__story-tag-list li {
       line-height: 24px;
       letter-spacing: -0.02em;
@@ -194,6 +196,7 @@ InstantClick.on('change', function() {
       color: white;
       text-align: center;
       width: 90%;
+      font-weight: bold;
     }
 
     .she-coded-page__sub-header {
@@ -275,10 +278,7 @@ InstantClick.on('change', function() {
       line-height: 40px;
     }
 
-    @media only screen and (max-width: 768px) {
-      .she-coded-page__sticker {
-        height: calc(80/100 * 450px);
-      }
+    @media only screen and (max-width: 958px) {
       .she-coded-page__some-story-info {
         flex-direction: column;
       }
@@ -309,26 +309,17 @@ InstantClick.on('change', function() {
       .she-coded-page__some-story-container {
         padding: 1em;
       }
+      .she-coded-page__sheet-description {
+        width: 100%;
+      }
     }
 
     @media only screen and (max-width: 425px) {
-      .she-coded-page__sticker {
-        height: calc(40/100 * 450px);
-      }
 
       .she-coded-page__sheet-container {
         padding: 16px;
       }
 
-      .she-coded-page__sheet-description {
-        width: 100%;
-      }
-
-
-    }
-
-    #footer-container {
-      margin-top: -280px;
     }
   </style>
 
@@ -340,7 +331,7 @@ InstantClick.on('change', function() {
         </div>
         <div class="she-coded-page__sheet-container campaign-description__container">
           <div class="she-coded-page__sticker-container">
-            <img class="she-coded-page__sticker" src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ujk2he4i3x688yas7xn7.png" alt="she coded sticker">
+            <img class="she-coded-page__sticker" src="https://res.cloudinary.com/practicaldev/image/fetch/s--fAvluWEN--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ujk2he4i3x688yas7xn7.png" alt="she coded sticker">
           </div>
           <div class="she-coded-page__sheet-description">
             <h1 class="she-coded-page__sheet-header">Let’s celebrate International Women’s Day!</h1>
